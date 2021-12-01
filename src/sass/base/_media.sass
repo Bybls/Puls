@@ -71,13 +71,19 @@
 @media (max-width:575px)
     
     .container
-        max-width: 450px
+        max-width: 500px
     .header
-        flex-direction: column
+        flex-wrap: wrap
+        align-items: center
         &__logo
-            width: 220px
+            margin: 0 auto
+            margin-top: 10px
+            max-width: 220px
+            img
+                width: 95%
         &__official
-            font-size: 14px
+            /** min-width: 320px **/
+            font-size: 16px
             text-align: center
             margin: 0 auto
             margin-top: 10px
@@ -86,37 +92,45 @@
                 font-size: 15px
                 font-weight: 700
         &__contacts
+            display: none
+            margin: 0 auto
             margin-top: 10px
         &__phone
-            font-size: 12px
+            font-size: 14px
+            &:hover
+                color: #fff 
     .promo
         padding-bottom: 20px
         min-height: 500px
         &__header
-            font-size: 28px
-            text-align: justify
+            font-size: 24px
+            text-align: right
         &__subheader
-            font-size: 15px
+            text-align: right
+            font-size: 14px
             margin-top: 10px
         &__wrapper
-            margin-top: 60px
-            align-items: center
-        &__icons 
             margin-top: 40px
-            display: none
+        &__icons 
+            margin-top: 30px
+            width: 300px
         &__icon
+            font-size: 12px
             img
                 width: 30px
                 height: 34px
                 margin-bottom: 10px
     .button
-        margin-top: 5px
+        width: 180px
+        height: 35px
         &__main
-            margin-top: 40px
+            margin-top: 30px
             width: 250px
             height: 40px
             font-size: 14px
             padding-top: 3px
+        &__submit
+            width: 100%
     .benefit
         padding-top: 40px
         &__wrapper
@@ -141,7 +155,7 @@
             margin-top: 15px
             font-size: 14px
     .feed-form
-        width: 100%
+        width: 98%
         input
             height: 40px
             margin-bottom: 10px
